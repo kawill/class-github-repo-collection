@@ -1,0 +1,9 @@
+<ul>
+    <% _.forEach(repos, function(m) { %>
+        <li>
+            <a href="#<%= m.name %>">
+                <%= m.name %>
+            </a>
+        </li>
+    <% }); %>
+</ul>
