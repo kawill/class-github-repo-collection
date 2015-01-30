@@ -1,0 +1,25 @@
+<ul>
+    <% _.forEach(userInfo, function(u) { %>
+        <li>
+            <a href="#<%= m.login %>">
+                <%= m.login %>
+            </a>
+        </li>
+        <li>
+            <a href="#<%= u.location %>">
+            <%= u.location%>
+            </a>
+        </li>
+        <li>
+            <a href="#<%= u.email %>">
+            <%= u.email%>
+            </a>
+        </li>
+        <li>
+            <a href="#<%= u.blog %>">
+            <%= u.blog%>
+            </a>
+        </li>
+
+    <% }); %>
+</ul>
